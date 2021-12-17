@@ -1,0 +1,12 @@
+{
+  "name": "example.module",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "vite build && gulp",
+    "build-watch": "vite build --watch",
+    "watch": "concurrently \"gulp watch\" npm:build-watch --raw"
+  },
+  "dependencies": {
+    "openstamanager": "github:Dasc3er/openstamanager#rewrite"
+  }
+}
