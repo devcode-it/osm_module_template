@@ -6,7 +6,9 @@
     "build-watch": "vite build --watch",
     "watch": "concurrently \"gulp watch\" npm:build-watch --raw"
   },
-  "dependencies": {},
+  "dependencies": {
+    "openstamanager": "github:Dasc3er/openstamanager#rewrite"
+  },
   "devDependencies": {
     "@adeira/babel-preset-adeira": "^4.0.0",
     "@adeira/eslint-config": "^6.8.0",
