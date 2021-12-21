@@ -7,7 +7,7 @@
     "watch": "concurrently \"gulp watch\" npm:build-watch --raw"
   },
   "dependencies": {
-    "openstamanager": "github:Dasc3er/openstamanager#rewrite"
+    "openstamanager": "dev"
   },
   "devDependencies": {
     "@adeira/babel-preset-adeira": "^4.0.0",
