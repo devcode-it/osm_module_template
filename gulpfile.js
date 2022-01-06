@@ -8,7 +8,7 @@ async function replaceImport() {
   gulp.src(["./dist/index.ts"], {
     allowEmpty: true
   })
-    .pipe(replace(/(?<osm>from ["']openstamanager["'])/, "from '../../../index.ts'"))
+    .pipe(replace(/(?<osm>from ["']openstamanager["'])/, "from '../../../index.js'"))
     .pipe(gulp.dest('./dist/'));
 }
 
