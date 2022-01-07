@@ -47,7 +47,7 @@
     }
   },
   "scripts": {
-    "post-package-update": "gulp copyGlobalscp  ./resources/js/globals.d.ts"
+    "post-package-update": "gulp copyGlobalscp"
   },
   "scripts-descriptions": {
     "post-package-update": "Copia il file globals.d.ts dal package di OpenSTAManager"
