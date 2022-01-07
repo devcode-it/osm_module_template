@@ -5,7 +5,7 @@ const gulp = require('gulp');
 const replace = require('gulp-replace');
 
 async function replaceImport() {
-  gulp.src(["./dist/index.ts"], {
+  gulp.src(["./dist/index.js"], {
     allowEmpty: true
   })
     .pipe(replace(/(?<osm>from ["']openstamanager["'])/, "from '../../../index.js'"))
