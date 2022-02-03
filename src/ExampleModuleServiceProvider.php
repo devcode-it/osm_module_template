@@ -2,6 +2,7 @@
 
 namespace Openstamanager\ExampleModule;
 
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 
 class ExampleModuleServiceProvider extends ServiceProvider
@@ -16,7 +17,7 @@ class ExampleModuleServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/../config/example.module.php', 'example.module');
 
         $this->publishConfig();
-        $this->loadRoutesFrom(__DIR__ . '/routes.php');
+        $this->loadRoutes();
 
         $this->publishes([
             __DIR__ . '/../dist' => public_path('build/vendor/openstamanager/example.module')
@@ -41,5 +42,15 @@ class ExampleModuleServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/example.module.php' => config_path('example.module.php'),
             ], 'config');
         }
+    }
+
+    public function loadRoutes(): void {
+        Route::group(['middleware' => 'web'], function () {
+            $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
+        });
+
+        Route::group(['prefix' => 'api', 'middleware' => 'api'], function () {
+            $this->loadRoutesFrom(__DIR__ . '/routes/api.php');
+        });
     }
 }
