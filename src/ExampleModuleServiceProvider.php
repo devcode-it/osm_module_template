@@ -13,7 +13,7 @@ class ExampleModuleServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/example.module.php', 'attivita.tipi');
+        $this->mergeConfigFrom(__DIR__ . '/../config/example.module.php', 'example.module');
 
         $this->publishConfig();
         $this->loadRoutesFrom(__DIR__ . '/routes.php');
@@ -25,10 +25,8 @@ class ExampleModuleServiceProvider extends ServiceProvider
             __DIR__ . '/../dist' => resource_path('static/vendor/openstamanager/example.module')
         ], 'example.module:assets-dev');
 
-        // $this->loadViewsFrom(__DIR__.'/resources/views', 'attivita.tipi');
+        // $this->loadViewsFrom(__DIR__.'/resources/views', 'example.module');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-
-        cache()->forever('modules.example.module.drawer_routes', $this->getDrawerRoutes());
     }
 
     /**
@@ -43,14 +41,5 @@ class ExampleModuleServiceProvider extends ServiceProvider
                 __DIR__ . '/../config/example.module.php' => config_path('example.module.php'),
             ], 'config');
         }
-    }
-
-    public function getDrawerRoutes() {
-        return [
-            'example.module' => [
-                'icon' => 'shape-outline',
-                'text' => __('Example module menu entry')
-            ]
-        ];
     }
 }
