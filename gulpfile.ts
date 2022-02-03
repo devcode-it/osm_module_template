@@ -15,7 +15,7 @@ export function copyGlobals() {
   return src(['./vendor/devcode-it/openstamanager/resources/js/globals.d.ts'], {
     allowEmpty: true
   })
-    .pipe(replace(/(?<osm>from ["']\.\/.+["'])/, "from 'openstamanager'"))
+    .pipe(replace(/(?<osm>from ["']\.+\/.+["'])/g, "from 'openstamanager'"))
     .pipe(dest('./resources/js/'));
 }
 
