@@ -8,6 +8,7 @@ export default function replaceImport() {
     allowEmpty: true
   })
     .pipe(replace(/(?<osm>from ["']openstamanager["'])/, "from '../../../index.js'"))
+    .pipe(replace(/from ["']@(?<vendor>[\w.-]+)\/(?<module>[\w.-]+)["']/, "from '../../$1/$2/index.js'"))
     .pipe(dest('./dist/'));
 }
 
