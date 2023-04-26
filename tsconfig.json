@@ -15,23 +15,12 @@
       "dom",
       "dom.iterable"
     ],
-    "types": [
-      "vite/client",
-      "vite-plugin-pwa/client"
-    ],
     "baseUrl": ".",
     "paths": {
-      "openstamanager": ["./vendor/devcode-it/openstamanager/resources/js"]
+      "@osm/*": ["./vendor/devcode-it/openstamanager/resources/ts/*"]
     }
   },
   "include": [
-    "resources/js/*",
-    "vite.config.ts",
-    "gulpfile.ts"
-  ],
-  "ts-node": {
-    "compilerOptions": {
-      "module": "commonjs"
-    }
-  }
+    "resources/ts/*"
+  ]
 }

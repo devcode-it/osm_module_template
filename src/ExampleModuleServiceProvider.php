@@ -2,10 +2,10 @@
 
 namespace Openstamanager\ExampleModule;
 
+use App\ModuleServiceProvider;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\ServiceProvider;
 
-class ExampleModuleServiceProvider extends ServiceProvider
+class ExampleModuleServiceProvider extends ModuleServiceProvider
 {
     /**
      * Bootstrap any application services.

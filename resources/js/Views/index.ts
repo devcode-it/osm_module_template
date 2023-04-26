@@ -1,3 +1,0 @@
-// noinspection JSUnusedGlobalSymbols
-
-export {};

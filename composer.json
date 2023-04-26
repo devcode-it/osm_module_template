@@ -18,38 +18,32 @@
   "minimum-stability": "dev",
   "prefer-stable": true,
   "require": {
-    "php": ">=8.0",
+    "php": ">=8.1",
     "devcode-it/openstamanager": "3.x-dev"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest"
+    "roave/security-advisories": "dev-latest",
+    "friendsofphp/php-cs-fixer": "^3",
+    "nunomaduro/larastan": "^2",
+    "orchestra/testbench": "^8"
   },
   "autoload": {
     "psr-4": {
-      "Openstamanager\\TipiAttivita\\": "src/"
+      "Openstamanager\\ExampleModule\\": "src/"
     }
   },
   "config": {
     "preferred-install": "dist",
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "wikimedia/composer-merge-plugin": true
+    }
   },
   "extra": {
     "laravel": {
       "providers": [
         "ExampleModuleServiceProvider"
       ]
-    },
-    "osm-modules": {
-      "attivita.tipi": {
-        "icon": "format-list-bulleted-type",
-        "parent-module": "openstamanager/example"
-      }
     }
-  },
-  "scripts": {
-    "post-autoload-dump": "pnpm gulp copyGlobals && pnpm eslint --fix ./resources/js/globals.d.ts"
-  },
-  "scripts-descriptions": {
-    "post-autoload-dump": "Copia il file globals.d.ts dal package di OpenSTAManager"
   }
 }
