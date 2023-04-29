@@ -1,11 +1,7 @@
 <?php
-// Configurazione del modulo
+/**
+ * Questo file è un esempio di file di configurazione di un modulo.
+ * Si tratta di un array associativo che verrà unito alla configurazione.
+ */
 return [
-    // Le voci del drawer aggiunte dal modulo
-    'drawer_entries' => [
-        'example.module' => [
-            'icon' => 'shape-outline',
-            'text' => __('Example module menu entry')
-        ]
-    ]
 ];
