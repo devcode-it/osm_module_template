@@ -22,10 +22,12 @@
     "devcode-it/openstamanager": "3.x-dev"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-latest",
-    "friendsofphp/php-cs-fixer": "^3",
-    "nunomaduro/larastan": "^2",
-    "orchestra/testbench": "^8"
+    "friendsofphp/php-cs-fixer" : "^3",
+    "nunomaduro/larastan" : "^2.5.2",
+    "orchestra/testbench" : "^8",
+    "vimeo/psalm": "^5",
+    "psalm/plugin-laravel": "^2",
+    "roave/security-advisories": "dev-latest"
   },
   "autoload": {
     "psr-4": {
@@ -44,6 +46,9 @@
       "providers": [
         "ExampleModuleServiceProvider"
       ]
+    },
+    "inertia": {
+      "openstamanager/example.module": "resources/ts/Views"
     }
   }
 }

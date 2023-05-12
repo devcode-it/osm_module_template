@@ -1,38 +1,39 @@
 {
   "name": "example.module",
   "version": "0.0.0",
-  "private" : true,
+  "private": true,
   "osm_module": true,
   "dependencies": {
-    "openstamanager": "file:vendor/devcode-it/openstamanager",
     "@formkit/auto-animate": "1.0.0-beta.6",
     "@maicol07/inertia-mithril": "^1.0.3",
-    "@maicol07/material-web-additions": "^1.2.11",
+    "@maicol07/material-web-additions": "^1.2.13",
     "@material/mwc-snackbar": "^0.27.0",
     "@material/mwc-top-app-bar": "^0.27.0",
     "@material/theme": "^14.0.0",
-    "@material/web": "1.0.0-pre.6",
+    "@material/web": "1.0.0-pre.7",
     "@mdi/js": "^7.2.96",
     "classnames": "^2.3.2",
     "collect.js": "^4.36.1",
-    "coloquent": "npm:@maicol07/coloquent@^3.0.1-beta",
+    "coloquent": "npm:@maicol07/coloquent@3.0.1-beta",
     "dayjs": "^1.11.7",
     "include-media": "^2.0.0",
-    "lit": "^2.7.2",
+    "lit": "^2.7.4",
     "mithril": "^2.2.2",
-    "mithril-utilities": "^1.1.0",
+    "mithril-utilities": "^1.1.2",
     "modern-normalize": "^1.1.0",
+    "openstamanager": "file:vendor/devcode-it/openstamanager",
     "postcss-scss": "^4.0.6",
     "prntr": "^2.0.18",
     "readable-http-codes": "^1.1.1",
-    "ts-pattern": "^4.2.2",
-    "typescript-cookie": "^1.0.5"
+    "ts-pattern": "^4.2.3",
+    "typescript-cookie": "^1.0.6"
   },
   "devDependencies": {
-    "@maicol07/eslint-config" : "^2.2.4",
-    "@types/mithril" : "^2.0.12",
-    "@types/ziggy-js" : "^1.3.2",
-    "typescript" : "^5.0.4"
+    "@maicol07/eslint-config": "^2.3.0",
+    "@types/mithril": "^2.0.12",
+    "@types/ziggy-js": "^1.3.2",
+    "type-fest": "^3.10.0",
+    "typescript": "^5.0.4"
   },
-  "packageManager" : "pnpm@8.3.1"
+  "packageManager": "pnpm@8.5.0"
 }
