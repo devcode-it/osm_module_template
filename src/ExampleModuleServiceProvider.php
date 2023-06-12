@@ -19,13 +19,6 @@ class ExampleModuleServiceProvider extends ModuleServiceProvider
         $this->publishConfig();
         $this->loadRoutes();
 
-        $this->publishes([
-            __DIR__ . '/../dist' => public_path('build/vendor/openstamanager/example.module')
-        ], 'example.module:assets');
-        $this->publishes([
-            __DIR__ . '/../dist' => resource_path('static/vendor/openstamanager/example.module')
-        ], 'example.module:assets-dev');
-
         // $this->loadViewsFrom(__DIR__.'/resources/views', 'example.module');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }

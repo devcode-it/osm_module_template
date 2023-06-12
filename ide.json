@@ -1,14 +1,20 @@
 {
-    "$schema": "ide.schema.json",
-    "completions": [
+  "$schema": "ide.schema.json",
+  "completions": [
+    {
+      "complete": "validationRule",
+      "condition": [
         {
-            "complete": "validationRule",
-            "condition": [
-                {
-                    "methodNames": ["rules", "storingRules", "updatingRules"],
-                    "classFqn": ["\\Binaryk\\LaravelRestify\\Fields\\Field"]
-                }
-            ]
+          "methodNames": [
+            "rules",
+            "storingRules",
+            "updatingRules"
+          ],
+          "classFqn": [
+            "\\Binaryk\\LaravelRestify\\Fields\\Field"
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
