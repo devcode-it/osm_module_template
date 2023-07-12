@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" packagePrefix="Openstamanager\ExampleModule\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/node_modules/.pnpm/@maicol07+coloquent@3.0.1-beta/node_modules/php-date-formatter/" isTestSource="false" packagePrefix="kartik\plugins\dateformatter\" />
+      <sourceFolder url="file://$MODULE_DIR$/node_modules/.pnpm/node_modules/php-date-formatter/" isTestSource="false" packagePrefix="kartik\plugins\dateformatter\" />
       <sourceFolder url="file://$MODULE_DIR$/node_modules/.pnpm/php-date-formatter@1.3.6/node_modules/php-date-formatter/" isTestSource="false" packagePrefix="kartik\plugins\dateformatter\" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/bacon/bacon-qr-code" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/binaryk/laravel-restify" />
