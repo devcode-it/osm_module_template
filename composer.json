@@ -49,6 +49,11 @@
     },
     "inertia": {
       "openstamanager/example.module": "resources/ts/Views"
+    },
+    "merge-plugin": {
+      "include": [
+        "composer.local.json"
+      ]
     }
   }
 }
